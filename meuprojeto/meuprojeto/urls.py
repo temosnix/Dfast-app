@@ -16,9 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Dfastapp.views import home
+from Dfastapp.views import home , processar_login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home, name='home')
+    
+    path('Home', processar_login, name='processar_login'),
+    path('', home, name='home'),
 ]
