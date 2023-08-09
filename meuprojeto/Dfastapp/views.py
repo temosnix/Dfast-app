@@ -10,7 +10,7 @@ def home (request):
     form = login_form()
     data['form'] = form
 
-    return render(request,'dfastapp/home.html', data)
+    return render(request,'dfastapp/index.html', data)
 
 
 def processar_login (request):
